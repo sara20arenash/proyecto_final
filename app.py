@@ -336,7 +336,7 @@ if st.checkbox('Obtener datos por fecha y barrio', False):
     
     # Código para convertir el DataFrame en una tabla plotly resumen
     fig = go.Figure(data=[go.Table(
-        header=dict(values=df2.columns),#titulos de la columna se uede hacer una lista con los nombre s[']
+        header=dict(values=df2.columns,#titulos de la columna se uede hacer una lista con los nombre s[']
         fill_color='lightgrey',#relleno color
         line_color='darkslategray'),#linea color
         cells=dict(values=[df2.Fecha, df2.Barrio, df2.Cantidad],fill_color='white',line_color='lightgrey'))
